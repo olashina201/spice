@@ -36,9 +36,24 @@ const Footer = () => {
 export default Footer;
 
 const FooterContainer = styled.div`
-  background: #e5e5e5;
+  background: #000;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  color: #fff;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
+
+  ul {
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+    margin-left: .75rem;
+    align-items: center;
+  }
 `;
