@@ -1,8 +1,8 @@
-
+import NavBar from "./components/NavBar";
 function App() {
   return (
     <div>
-      HELLO WORLD
+      <NavBar />
     </div>
   );
 }
