@@ -135,8 +135,8 @@ const InnerItem = styled.div`
   @media (max-width: 320px) {
     width: 280px;
   }
-  @media (max-width: 425px) {
-    width: 280px;
+  @media (min-width: 200px) {
+    width: 90%;
   }
   h3 {
     font-family: "Playfair Display";
