@@ -7,6 +7,8 @@ import { experiences } from "../data";
 const Experience = () => {
   return (
     <ExperienceContainer style={{ backgroundImage: `url(${HeroImage})` }}>
+        <ExperienceOverlay>
+        <ExperienceHeader>Experience</ExperienceHeader>
       <GridComponent>
         <GridContent gridColumn="3" gridRow="1">
           <InnerItem>
@@ -36,10 +38,11 @@ const Experience = () => {
             <p>{experiences.experience[3].description}</p>
           </InnerItem>
         </GridContent>
-        <GridContent gridColumn="2/4" gridRow="2">
+        <GridContent gridColumn="2" gridRow="1 / span 4">
           <img src={line} alt="line" />
         </GridContent>
       </GridComponent>
+      </ExperienceOverlay>
     </ExperienceContainer>
   );
 };
@@ -47,32 +50,114 @@ const Experience = () => {
 export default Experience;
 
 const ExperienceContainer = styled.div`
-  background: #000000;
   color: #fff;
   background-size: cover;
   position: relative;
   display: grid;
   align-items: center;
-  opacity: 0.94;
+  margin: 0 auto;
+//   overflow: hidden;
 `;
 
+const ExperienceOverlay = styled.div`
+padding: 4em 0;
+background: #000000;
+opacity: 0.94;
+`
+
+const ExperienceHeader = styled.div`
+font-family: "Playfair Display";
+font-weight: bold;
+font-size: 36px;
+line-height: 48px;
+color: #FFCA47;
+text-align: center;
+margin-bottom: 50px;
+`
+
 const GridComponent = styled.div`
-  width: 80%;
+  padding: 0 80px;
   display: grid;
+  margin: 0 auto;
+  @media (max-width: 568px) {
+    padding: 0 20px;
+    margin: 0;
+  }
+  @media (max-width: 320px) {
+    padding: 0;
+    margin: 0;
+  }
 `;
 
 const GridContent = styled.div`
-  width: 40rem;
-  height: 15rem;
   display: grid;
   margin: 5px;
-  grid-template-rows: 20rem;
+  grid-template-rows: auto auto auto auto;
   grid-column: ${(props) => props.gridColumn};
   grid-row: ${(props) => props.gridRow};
+  margin-bottom: 80px;
+  :nth-child(5) {
+    padding: 0 50px;
+  }
+  @media (max-width: 768px) {
+      :nth-child(5) {
+        grid-row: 1 / span 5;
+        grid-column: 1;
+        padding: 0px;
+      }
+      :nth-child(1) {
+        grid-column: 2;
+        grid-row: 1;
+        margin-bottom: 80px;
+      }
+      :nth-child(2) {
+        grid-column: 2;
+        grid-row: 2;
+      }
+      :nth-child(3) {
+        grid-column: 2;
+        grid-row: 3;
+      }
+      :nth-child(4) {
+        grid-column: 2;
+        grid-row: 4;
+      }
+}
 `;
 
 const InnerItem = styled.div`
   display: flex;
   flex-direction: column;
-  width: 20rem;
+  width: 462px;
+  @media (min-width: 568px) {
+    width: 70%;
+  }
+  @media (max-width: 320px) {
+    width: 280px;
+  }
+  @media (max-width: 425px) {
+    width: 280px;
+  }
+  h3 {
+    font-family: "Playfair Display";
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 5px;
+  }
+  span {
+    font-family: "Rubik";
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-family: "Rubik";
+    font-size: 21px;
+    line-height: 33.52px;
+    @media (max-width: 568px) {
+        font-size: 18px;   
+        line-height: 28.73px;
+    }
+  }
 `;

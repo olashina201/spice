@@ -52,7 +52,7 @@ const BannerContent = styled.div`
   @media (max-width: 1024px) {
     justify-content: space-between;
   }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
     align-items: center;

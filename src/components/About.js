@@ -41,7 +41,7 @@ const AboutContainer = styled.div`
     @media (max-width: 768px) {
       width: 20rem;
       height: 20rem;
-  }
+    }
   }
 `;
 const AboutCap = styled.span`
@@ -54,6 +54,7 @@ const AboutCap = styled.span`
     width: 80%;
   }
   h1 {
+    font-family: "Playfair Display";
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -61,6 +62,7 @@ const AboutCap = styled.span`
     color: #ffca47;
   }
   p {
+    font-family: "Rubik";
     font-size: 21px;
     font-weight: 400;
   }

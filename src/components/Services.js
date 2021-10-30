@@ -50,6 +50,7 @@ const ServiceComponent = styled.div`
   }
 `;
 const ServiceCap = styled.div`
+font-family: "Playfair Display";
   text-align: center;
   color: #ffca47;
   font-weight: bold;
@@ -65,10 +66,12 @@ const ServiceMenu = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding-bottom: 3rem;
 `;
 const MenuCap = styled.div`
   display: flex;
-  width: 20rem;
+  width: 25rem;
+  height: 15rem;
   background: #100f0f;
   padding: 1.5rem;
   margin: 0.75rem;
@@ -79,12 +82,14 @@ const MenuCap = styled.div`
     flex-direction: column;
   }
   h1 {
+    font-family: "Rubik";
     font-size: 24px;
     text-align: center;
     font-weight: bold;
     margin-bottom: 0.75rem;
   }
   p {
+    font-family: "Rubik";
     font-size: 21px;
     font-weight: 300;
     margin: 0 auto;
@@ -92,7 +97,7 @@ const MenuCap = styled.div`
   }
 `;
 const ServiceButton = styled.div`
-  font-family: Rubik;
+  font-family: "Rubik";
   font-weight: normal;
   font-size: 20px;
   width: 13rem;

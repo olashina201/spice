@@ -85,7 +85,7 @@ const TContainer = styled.div`
     transition: 0.3s;
     text-align: center;
     .title {
-        font-family: Playfair Display;
+        font-family: "Playfair Display";
         font-style: normal;
         font-weight: bold;
         font-size: 36px;

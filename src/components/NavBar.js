@@ -100,6 +100,7 @@ const Nav = styled.div`
   }
 
   .navbar-list-items .nav-link {
+    font-family: "Rubik";
     text-decoration: none;
     color: #fff;
     align-items: center;
@@ -109,7 +110,7 @@ const Nav = styled.div`
     font-size: 16px;
     line-height: 13px;
     text-transform: capitalize;
-    font-weight: 500;
+    font-weight: 700;
     border-top: 2px solid transparent;
   }
 

@@ -36,7 +36,7 @@ const CommentContainer = styled.div`
   padding: 50px 0;
 `;
 const CommentText = styled.h1`
-  font-family: Playfair Display;
+  font-family: "Playfair Display";
   font-size: 36px;
   line-height: 48px;
   color: #ffca47;
@@ -51,11 +51,8 @@ const CommentMain = styled.div`
   display: flex;
   width: 80%;
   margin: 0 auto;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0 60px;
-  @media (max-width: 568px) {
-    padding: 0 20px;
-  }
 `;
 const CommentImg = styled.div`
   width: 25rem;
@@ -75,6 +72,7 @@ const CommentForm = styled.form`
   color: #fff;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 
   @media (max-width: 320px) {
     width: 300px;
@@ -140,5 +138,6 @@ const FormText = styled.p`
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
-  margin-bottom: 50px;
+  margin-bottom: 2rem;
+  text-align: center;
 `;
