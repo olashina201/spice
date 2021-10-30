@@ -42,9 +42,9 @@ const ServiceComponent = styled.div`
   width: 100%;
   background: #000;
   color: #fff;
-  height: 80vh;
   display: flex;
   flex-direction: column;
+  padding-bottom: 3rem;
   @media (max-width: 1080px) {
     height: 100%;
   }

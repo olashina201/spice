@@ -36,7 +36,9 @@ const Experience = () => {
             <p>{experiences.experience[3].description}</p>
           </InnerItem>
         </GridContent>
-        <img src={line} alt="line" />
+        <GridContent gridColumn="2/4" gridRow="2">
+          <img src={line} alt="line" />
+        </GridContent>
       </GridComponent>
     </ExperienceContainer>
   );
@@ -55,6 +57,7 @@ const ExperienceContainer = styled.div`
 `;
 
 const GridComponent = styled.div`
+  width: 80%;
   display: grid;
 `;
 
@@ -62,8 +65,8 @@ const GridContent = styled.div`
   width: 40rem;
   height: 15rem;
   display: grid;
-  grid-template-rows: auto auto auto auto;
-  grid-template-columns: 35% 10% 35%;
+  margin: 5px;
+  grid-template-rows: 20rem;
   grid-column: ${(props) => props.gridColumn};
   grid-row: ${(props) => props.gridRow};
 `;
@@ -71,4 +74,5 @@ const GridContent = styled.div`
 const InnerItem = styled.div`
   display: flex;
   flex-direction: column;
+  width: 20rem;
 `;

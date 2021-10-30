@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { TestimonialData } from "./TestimonialData";
+import { testimony } from "../data";
 import styled from "styled-components";
 import ArrowLeft from '../images/bi_arrow-left.png'
 import ArrowRight from '../images/bi_arrow-right.png'
@@ -28,14 +28,14 @@ const Testimony = () => {
   });
     return (
         <TContainer
-      key={TestimonialData[value].id}
+      key={testimony[value].id}
       className="testimonial"
     >
         <div className='title'>Testimonial</div>
       <div className="testimonial-info">
         <div className="container">
           <div className="testimonial-info-big">
-            <p>{TestimonialData[value].description}</p>
+            <p>{testimony[value].description}</p>
             <div className='profile'>
                 <div className='profile-image'>
                     <img src={profileImage} alt='profile-pics' />

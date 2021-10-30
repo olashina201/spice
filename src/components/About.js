@@ -50,7 +50,7 @@ const AboutCap = styled.span`
   display: flex;
   width: 50%;
   padding: 30px;
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
     width: 80%;
   }
   h1 {
