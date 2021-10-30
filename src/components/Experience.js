@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import HeroImage from "../images/expeimage.png";
 import line from "../images/line.png";
+import { experiences } from "../data";
 
 const Experience = () => {
   return (
@@ -9,54 +10,30 @@ const Experience = () => {
       <GridComponent>
         <GridContent gridColumn="3" gridRow="1">
           <InnerItem>
-            <h3>JTSpice, CEO</h3>
-            <span>2016 - present</span>
-            <p>
-              Morbi porta turpis ac risus tempor mattis. Nulla vestibulum a
-              lorem non luctus. Aliquam ut neque est. Sed tortor neque, rutrum
-              dapibus viverra sit amet, tristique sed justo. Nulla maximus
-              venenatis ligula quis cursus. Nullam laoreet luctus urna at
-              mattis.{" "}
-            </p>
+            <h3>{experiences.experience[0].role}</h3>
+            <span>{experiences.experience[0].date}</span>
+            <p>{experiences.experience[0].description}</p>
           </InnerItem>
         </GridContent>
         <GridContent gridColumn="1" gridRow="2">
           <InnerItem>
-            <h3>Kentucky Fried Chicken, Chief Cook</h3>
-            <span>2012 - 2016</span>
-            <p>
-              Morbi porta turpis ac risus tempor mattis. Nulla vestibulum a
-              lorem non luctus. Aliquam ut neque est. Sed tortor neque, rutrum
-              dapibus viverra sit amet, tristique sed justo. Nulla maximus
-              venenatis ligula quis cursus. Nullam laoreet luctus urna at
-              mattis.{" "}
-            </p>
+            <h3>{experiences.experience[1].role}</h3>
+            <span>{experiences.experience[1].date}</span>
+            <p>{experiences.experience[1].description}</p>
           </InnerItem>
         </GridContent>
         <GridContent gridColumn="3" gridRow="3">
           <InnerItem>
-            <h3>Chillspot, Assistant Chef</h3>
-            <span>2005 - 2012</span>
-            <p>
-              Morbi porta turpis ac risus tempor mattis. Nulla vestibulum a
-              lorem non luctus. Aliquam ut neque est. Sed tortor neque, rutrum
-              dapibus viverra sit amet, tristique sed justo. Nulla maximus
-              venenatis ligula quis cursus. Nullam laoreet luctus urna at
-              mattis.{" "}
-            </p>
+            <h3>{experiences.experience[2].role}</h3>
+            <span>{experiences.experience[2].date}</span>
+            <p>{experiences.experience[2].description}</p>
           </InnerItem>
         </GridContent>
         <GridContent gridColumn="1" gridRow="4">
           <InnerItem>
-            <h3>Dallas Delight, Chief Cook</h3>
-            <span>2012 - 2014</span>
-            <p>
-              Morbi porta turpis ac risus tempor mattis. Nulla vestibulum a
-              lorem non luctus. Aliquam ut neque est. Sed tortor neque, rutrum
-              dapibus viverra sit amet, tristique sed justo. Nulla maximus
-              venenatis ligula quis cursus. Nullam laoreet luctus urna at
-              mattis.{" "}
-            </p>
+            <h3>{experiences.experience[3].role}</h3>
+            <span>{experiences.experience[3].date}</span>
+            <p>{experiences.experience[3].description}</p>
           </InnerItem>
         </GridContent>
         <img src={line} alt="line" />
